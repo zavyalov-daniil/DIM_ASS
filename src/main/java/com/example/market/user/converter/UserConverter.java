@@ -45,12 +45,17 @@ public class UserConverter {
     }
 
     public UserDTO entityToDto(User entity) {
+        Image image = entity.getAvatar();
+        Image imageDTO = null;
+        if (image != null) {
+            imageDTO = imageConverter.dtoToEntity(entity.getAvatar(), null);
+        }
         UserDTO dto = new UserDTO(entity.getId(),
                 entity.getEmail(),
                 entity.getPhone(),
                 entity.getName(),
                 entity.isEnabled(),
-                imageConverter.entityToDto(entity.getAvatar()),
+                imageDTO,
                 entity.getPassword(),
                 entity.getRoles(),
                 null,
