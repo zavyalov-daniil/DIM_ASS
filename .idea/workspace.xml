@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="595c7603-b2c6-4a75-afca-5862bb7692fb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/product-info.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/product-info.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/products.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/products.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user-edit.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user-edit.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user-info.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user-info.ftlh" afterDir="false" />
-    </list>
+    <list default="true" id="595c7603-b2c6-4a75-afca-5862bb7692fb" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,7 +82,7 @@
       <updated>1696174191505</updated>
       <workItem from="1696174193194" duration="6682000" />
       <workItem from="1696180898228" duration="24000" />
-      <workItem from="1696180935833" duration="5888000" />
+      <workItem from="1696180935833" duration="6262000" />
     </task>
     <servers />
   </component>

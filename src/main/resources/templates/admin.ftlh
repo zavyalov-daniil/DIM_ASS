@@ -24,13 +24,13 @@
             <th><#if userDTO.active>true<#else>false</#if></th>
             <th><#list userDTO.roles as role>${role}</#list></th>
             <th>
-                <form action="/admin/userDTO/ban/${userDTO.id}" method="post">
+                <form action="/admin/user/ban/${userDTO.id}" method="post">
                     <input type="hidden" name="_csrf" value="${_csrf.token}">
                     <input type="submit" value="Бан">
                 </form>
             </th>
-            <th><a href="/admin/userDTO/edit/${userDTO.id}">Редактировние</a></th>
-            <th><a href="/userDTO/${userDTO.id}">Подробная информация</a></th>
+            <th><a href="/admin/user/edit/${userDTO.id}">Редактировние</a></th>
+            <th><a href="/user/${userDTO.id}">Подробная информация</a></th>
         </tr>
     <#else>
         <h3>Пользователей нет</h3>
