@@ -42,7 +42,7 @@ public class AdminController {
 
     @GetMapping("/admin/user/edit/{user}")
     public String userEdit(@PathVariable("user") UserDTO userDTO, Model model) {
-        model.addAttribute("user", userDTO);
+        model.addAttribute("userDTO", userDTO);
         model.addAttribute("roles", Role.values());
         return "user-edit";
     }
