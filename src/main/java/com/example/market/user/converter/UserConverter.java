@@ -1,6 +1,8 @@
 package com.example.market.user.converter;
 
+import com.example.market.image.controller.dto.ImageDTO;
 import com.example.market.image.converter.ImageConverter;
+import com.example.market.image.repository.model.Image;
 import com.example.market.product.converters.ProductConverter;
 import com.example.market.product.controllers.model.ProductDTO;
 import com.example.market.user.controller.dto.UserDTO;
@@ -18,6 +20,11 @@ public class UserConverter {
     private final ProductConverter productConverter;
 
     public User dtoToEntity(UserDTO dto) {
+        ImageDTO imageDTO = dto.getAvatar();
+        Image image;
+        if (imageDTO != null) {
+            image = imageConverter.dtoToEntity(dto.getAvatar(), null);
+        }
         User entity = new User(dto.getId(),
                 dto.getEmail(),
                 dto.getPhone(),
