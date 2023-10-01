@@ -1,10 +1,10 @@
 package com.example.market.services;
 
-import com.example.market.model.entity.Image;
+import com.example.market.image.repository.model.Image;
 import com.example.market.model.entity.Product;
-import com.example.market.model.entity.User;
+import com.example.market.user.repository.model.User;
 import com.example.market.repositories.ProductRepository;
-import com.example.market.repositories.UserRepository;
+import com.example.market.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

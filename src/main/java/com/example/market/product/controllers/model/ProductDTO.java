@@ -1,11 +1,11 @@
 package com.example.market.model.dto;
 
+import com.example.market.image.controller.dto.ImageDTO;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
 
 

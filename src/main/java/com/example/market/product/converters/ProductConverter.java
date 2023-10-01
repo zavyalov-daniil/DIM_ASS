@@ -1,10 +1,11 @@
 package com.example.market.converters;
 
-import com.example.market.model.dto.ImageDTO;
+import com.example.market.image.converter.ImageConverter;
+import com.example.market.image.controller.dto.ImageDTO;
 import com.example.market.model.dto.ProductDTO;
-import com.example.market.model.entity.Image;
+import com.example.market.image.repository.model.Image;
 import com.example.market.model.entity.Product;
-import com.example.market.model.entity.User;
+import com.example.market.user.repository.model.User;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
 

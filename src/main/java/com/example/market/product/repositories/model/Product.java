@@ -1,4 +1,6 @@
 package com.example.market.model.entity;
+import com.example.market.image.repository.model.Image;
+import com.example.market.user.repository.model.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

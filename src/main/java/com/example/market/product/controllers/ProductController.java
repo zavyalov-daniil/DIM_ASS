@@ -1,15 +1,10 @@
 package com.example.market.controllers;
 
 import com.example.market.converters.ProductConverter;
-import com.example.market.model.dto.ImageDTO;
 import com.example.market.model.dto.ProductDTO;
-import com.example.market.model.entity.Image;
 import com.example.market.model.entity.Product;
 import com.example.market.services.ProductService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.core.io.InputStreamResource;
-import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,7 +13,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.security.Principal;
 
