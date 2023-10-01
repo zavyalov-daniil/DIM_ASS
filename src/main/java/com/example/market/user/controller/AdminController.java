@@ -1,10 +1,10 @@
-package com.example.market.controllers;
+package com.example.market.user.controller;
 
-import com.example.market.converters.UserConverter;
-import com.example.market.model.dto.UserDTO;
-import com.example.market.model.entity.User;
-import com.example.market.model.enums.Role;
-import com.example.market.services.UserService;
+import com.example.market.user.converter.UserConverter;
+import com.example.market.user.controller.dto.UserDTO;
+import com.example.market.user.repository.model.User;
+import com.example.market.user.enums.Role;
+import com.example.market.user.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;

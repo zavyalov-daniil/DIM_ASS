@@ -1,6 +1,8 @@
-package com.example.market.model.dto;
+package com.example.market.user.controller.dto;
 
-import com.example.market.model.enums.Role;
+import com.example.market.image.controller.dto.ImageDTO;
+import com.example.market.product.controllers.model.ProductDTO;
+import com.example.market.user.enums.Role;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Getter;

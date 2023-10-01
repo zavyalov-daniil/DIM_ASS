@@ -1,4 +1,6 @@
-package com.example.market.model.dto;
+package com.example.market.image.controller.dto;
+import com.example.market.product.controllers.model.ProductDTO;
+import com.example.market.product.repositories.model.Product;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,4 +16,5 @@ public class ImageDTO {
     private String contentType;
     private boolean isPreviewImage;
     private byte[] bytes;
+    private ProductDTO product;
 }

@@ -1,6 +1,8 @@
-package com.example.market.model.entity;
+package com.example.market.user.repository.model;
 
-import com.example.market.model.enums.Role;
+import com.example.market.image.repository.model.Image;
+import com.example.market.product.repositories.model.Product;
+import com.example.market.user.enums.Role;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

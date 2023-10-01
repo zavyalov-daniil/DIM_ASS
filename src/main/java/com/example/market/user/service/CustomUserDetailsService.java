@@ -1,6 +1,6 @@
-package com.example.market.services;
+package com.example.market.user.service;
 
-import com.example.market.repositories.UserRepository;
+import com.example.market.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

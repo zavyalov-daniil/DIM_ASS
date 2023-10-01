@@ -1,6 +1,6 @@
-package com.example.market.repositories;
+package com.example.market.product.repositories;
 
-import com.example.market.model.entity.Product;
+import com.example.market.product.repositories.model.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

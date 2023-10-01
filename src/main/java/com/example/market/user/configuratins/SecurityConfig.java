@@ -1,6 +1,6 @@
-package com.example.market.configuratins;
+package com.example.market.user.configuratins;
 
-import com.example.market.services.CustomUserDetailsService;
+import com.example.market.user.service.CustomUserDetailsService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;

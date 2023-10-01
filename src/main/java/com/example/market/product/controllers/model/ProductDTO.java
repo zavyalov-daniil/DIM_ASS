@@ -1,6 +1,8 @@
-package com.example.market.model.dto;
+package com.example.market.product.controllers.model;
 
 import com.example.market.image.controller.dto.ImageDTO;
+import com.example.market.user.controller.dto.UserDTO;
+import com.example.market.user.repository.model.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -31,4 +33,5 @@ public class ProductDTO {
     private List<ImageDTO> imageDTOS;
     private Long previewImageId;
     private LocalDateTime dateOfCreated;
+    private UserDTO user;
 }

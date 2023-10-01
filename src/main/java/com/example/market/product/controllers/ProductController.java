@@ -1,9 +1,10 @@
-package com.example.market.controllers;
+package com.example.market.product.controllers;
 
-import com.example.market.converters.ProductConverter;
-import com.example.market.model.dto.ProductDTO;
-import com.example.market.model.entity.Product;
-import com.example.market.services.ProductService;
+import com.example.market.product.converters.ProductConverter;
+import com.example.market.product.controllers.model.ProductDTO;
+import com.example.market.product.repositories.model.Product;
+import com.example.market.product.services.ProductService;
+import com.example.market.user.converter.UserConverter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -21,6 +22,7 @@ import java.security.Principal;
 public class ProductController {
     private final ProductService productService;
     private final ProductConverter productConverter;
+    private final UserConverter userConverter;
 
     @GetMapping("/")
     public String products(@RequestParam(name = "title", required = false) String title, Principal principal, Model model) {
@@ -35,6 +37,7 @@ public class ProductController {
         Product product = productService.getProductById(id);
         if (product != null) {
             productDTO = productConverter.entityToDto(product);
+            productDTO.setUser(userConverter.entityToDto(product.getUser()));
             model.addAttribute("product", productDTO);
             model.addAttribute("images", productDTO.getImageDTOS());
         }

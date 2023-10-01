@@ -1,9 +1,9 @@
-package com.example.market.services;
+package com.example.market.product.services;
 
 import com.example.market.image.repository.model.Image;
-import com.example.market.model.entity.Product;
+import com.example.market.product.repositories.model.Product;
 import com.example.market.user.repository.model.User;
-import com.example.market.repositories.ProductRepository;
+import com.example.market.product.repositories.ProductRepository;
 import com.example.market.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

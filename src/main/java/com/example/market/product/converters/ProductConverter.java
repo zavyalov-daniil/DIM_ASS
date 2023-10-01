@@ -1,10 +1,11 @@
-package com.example.market.converters;
+package com.example.market.product.converters;
 
 import com.example.market.image.converter.ImageConverter;
 import com.example.market.image.controller.dto.ImageDTO;
-import com.example.market.model.dto.ProductDTO;
+import com.example.market.product.controllers.model.ProductDTO;
 import com.example.market.image.repository.model.Image;
-import com.example.market.model.entity.Product;
+import com.example.market.product.repositories.model.Product;
+import com.example.market.user.converter.UserConverter;
 import com.example.market.user.repository.model.User;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
@@ -43,7 +44,8 @@ public class ProductConverter {
                 entity.getLocation(),
                 null,
                 entity.getPreviewImageId(),
-                entity.getDateOfCreated()
+                entity.getDateOfCreated(),
+                null
         );
         ArrayList<ImageDTO> images = new ArrayList<>();
         for (Image imageDto : entity.getImages()) {

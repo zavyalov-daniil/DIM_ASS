@@ -1,8 +1,8 @@
-package com.example.market.converters;
+package com.example.market.image.converter;
 
-import com.example.market.model.dto.ImageDTO;
-import com.example.market.model.entity.Image;
-import com.example.market.model.entity.Product;
+import com.example.market.image.controller.dto.ImageDTO;
+import com.example.market.image.repository.model.Image;
+import com.example.market.product.repositories.model.Product;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Component;
 
@@ -30,6 +30,7 @@ public class ImageConverter {
                 entity.getSize(),
                 entity.getContentType(),
                 entity.isPreviewImage(),
-                entity.getBytes());
+                entity.getBytes(),
+                null);
     }
 }

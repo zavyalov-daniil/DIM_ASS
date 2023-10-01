@@ -1,8 +1,8 @@
-package com.example.market.services;
+package com.example.market.user.service;
 
-import com.example.market.model.entity.User;
-import com.example.market.model.enums.Role;
-import com.example.market.repositories.UserRepository;
+import com.example.market.user.repository.model.User;
+import com.example.market.user.enums.Role;
+import com.example.market.user.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.crypto.password.PasswordEncoder;
