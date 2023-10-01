@@ -18,7 +18,8 @@ public class ProductConverter {
     private ImageConverter imageConverter;
 
     public Product dtoToEntity(ProductDTO dto, User userEntity) {
-        Product entity = new Product(dto.getId(),
+        Product entity = new Product(
+                dto.getId(),
                 dto.getTitle(),
                 dto.getDescription(),
                 dto.getPrice(),

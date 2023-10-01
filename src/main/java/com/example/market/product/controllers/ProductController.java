@@ -49,9 +49,13 @@ public class ProductController {
                                 @RequestParam("file2") MultipartFile file2,
                                 @RequestParam("file3") MultipartFile file3,
                                 ProductDTO productDTO, Principal principal) throws IOException {
+        Product pr = null;
+        if (productDTO != null) {
+            pr = productConverter.dtoToEntity(productDTO, null);
+        }
         productService.saveProduct(
                 principal,
-                productConverter.dtoToEntity(productDTO, null), //пользователя ставим в сервисе
+                pr, //пользователя ставим в сервисе
                 file1,
                 file2,
                 file3

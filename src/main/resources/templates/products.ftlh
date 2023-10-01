@@ -34,7 +34,7 @@
 <#if userDTO.email??>
     <hr>
     <h3>Создать новый товар</h3>
-    <form action="/productDTO/create" method="post" enctype="multipart/form-data">
+    <form action="/product/create" method="post" enctype="multipart/form-data">
         Название объявления: <input type="text" name="title"/><br><br>
         Описание объявления: <input type="text" name="description"/><br><br>
         Цена: <input type="number" name="price"/><br><br>
