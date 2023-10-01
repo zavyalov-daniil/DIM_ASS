@@ -8,6 +8,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -30,7 +31,7 @@ public class ProductDTO {
     private int price;
     @NotBlank
     private String location;
-    private List<ImageDTO> imageDTOS;
+    private List<ImageDTO> imageDTOS  = new ArrayList<>();
     private Long previewImageId;
     private LocalDateTime dateOfCreated;
     private UserDTO user;
