@@ -21,7 +21,7 @@ public class UserConverter {
 
     public User dtoToEntity(UserDTO dto) {
         ImageDTO imageDTO = dto.getAvatar();
-        Image image;
+        Image image = null;
         if (imageDTO != null) {
             image = imageConverter.dtoToEntity(dto.getAvatar(), null);
         }
@@ -30,7 +30,7 @@ public class UserConverter {
                 dto.getPhone(),
                 dto.getName(),
                 dto.isEnabled(),
-                imageConverter.dtoToEntity(dto.getAvatar(), null),
+                image,
                 dto.getPassword(),
                 dto.getRoles(),
                 null,
