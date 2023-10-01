@@ -27,7 +27,7 @@ public class ProductController {
     @GetMapping("/")
     public String products(@RequestParam(name = "title", required = false) String title, Principal principal, Model model) {
         model.addAttribute("products", productService.listProducts(title));
-        model.addAttribute("user", productService.getUserByPrincipal(principal));
+        model.addAttribute("userDTO", productService.getUserByPrincipal(principal));
         return "products";
     }
 
@@ -38,7 +38,7 @@ public class ProductController {
         if (product != null) {
             productDTO = productConverter.entityToDto(product);
             productDTO.setUser(userConverter.entityToDto(product.getUser()));
-            model.addAttribute("product", productDTO);
+            model.addAttribute("productDTO", productDTO);
             model.addAttribute("images", productDTO.getImageDTOS());
         }
         return "product-info";

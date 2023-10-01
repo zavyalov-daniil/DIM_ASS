@@ -40,7 +40,7 @@ public class UserController {
 
     @GetMapping("/user/{user}")
     public String userInfo(@PathVariable("user") UserDTO userDTO, Model model) {
-        model.addAttribute("user", userDTO);
+        model.addAttribute("userDTO", userDTO);
         model.addAttribute("products", userDTO.getProductDTOS());
         return "user-info";
     }
