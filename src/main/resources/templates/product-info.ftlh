@@ -13,7 +13,7 @@
 <b>Описание: </b>${productDTO.description}<br>
 <b>Цена: </b>${productDTO.price}<br>
 <b>Город: </b>${productDTO.location}<br>
-<b>Продавец: </b>${productDTO.userDTO.name}<br>
-<b>Номер телефона: </b>${productDTO.userDTO.phone}<br>
+<b>Продавец: </b>${productDTO.user.name}<br>
+<b>Номер телефона: </b>${productDTO.user.phone}<br>
 </body>
 </html>

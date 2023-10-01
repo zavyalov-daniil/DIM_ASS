@@ -11,7 +11,7 @@
 <h4>Товары пользователя ${userDTO.name}</h4>
 <#list products as productDTO>
     <div>
-        <p><b>${productDTO.title}</b> ${productDTO.price} руб. | <a href="/productDTO/${productDTO.id}">Подробнее...</a></p>
+        <p><b>${productDTO.title}</b> ${productDTO.price} руб. | <a href="/product/${productDTO.id}">Подробнее...</a></p>
     </div>
 <#else>
     <h3>Товаров нет</h3>

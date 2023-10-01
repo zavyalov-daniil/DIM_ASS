@@ -6,7 +6,7 @@
 <body>
 <h1>Market</h1><hr>
 <h3>Редактирование пользователя ${userDTO.name}</h3>
-<form action="/admin/userDTO/edit" method="post">
+<form action="/admin/user/edit" method="post">
     <#list roles as role>
         <div>
             <label><input type="checkbox" name="${role}" ${userDTO.roles?seq_contains(role)?string("checked", "")}>${role}</label>
